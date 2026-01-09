@@ -22,7 +22,7 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync . s3://YOUR_BUCKET_NAME \
+          aws s3 sync . s3://gitsync-to-s3 \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
