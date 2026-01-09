@@ -22,7 +22,7 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync . s3://your-bucket-name/path \
+          aws s3 sync . s3://github-workflow-bucket /path \
             --exclude ".git/*" \
             --delete
 
